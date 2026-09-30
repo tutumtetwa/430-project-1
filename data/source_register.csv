@@ -1,0 +1,22 @@
+source_id,publisher,title,url,access_date,raw_file,attribution_notes
+SRC01,City of Chicago,"Business Licenses - Current Active (dataset uupf-x98q), Motor Vehicle Services License rows for Lake View, Lincoln Park, Lincoln Square, North Center",https://data.cityofchicago.org/Community-Economic-Development/Business-Licenses-Current-Active/uupf-x98q,2026-09-30,data/raw/chicago_business_licenses_2026-09-30.csv,City of Chicago Data Portal open data; exact SoQL download query recorded in data/cleaning_note.md
+SRC02,Ashland Tire & Auto,Ashland Tire & Auto - General Auto Services (home page),https://www.ashlandtire.com/,2026-09-30,data/raw/snapshots/SRC02.html,Provider's own site
+SRC03,Bucaro Brothers Auto Care,Bucaro Brothers Auto Care - Full-Service Auto Repair Shop (home page),https://www.bucarobrothersautocare.com/,2026-09-30,data/raw/snapshots/SRC03.html,Provider's own site
+SRC04,Cassidy Tire & Service,Cassidy Tire - Chicago store page (3235 N Western),https://www.cassidytire.com/stores/view/5163/,2026-09-30,data/raw/snapshots/SRC04.html,Provider's own site; store-specific page
+SRC05,Eliot's Complete Auto Repair,Eliot's Complete Auto Repair - Auto Repair in Chicago IL (home page),https://www.eliotscompleteautorepair.com/,2026-09-30,data/raw/snapshots/SRC05.html,Provider's own site
+SRC06,E & J Foreign Cars,E & J - Auto Services for you,https://www.eandj.com/auto-services,2026-09-30,data/raw/snapshots/SRC06.html,Provider's own site
+SRC07,Fred's Wrigleyville Garage & Auto Repair,Fred's Wrigleyville Garage (home page),http://fredswrigleyvillegarage.com,2026-09-30,data/raw/snapshots/SRC07.html,Provider's own site
+SRC08,Lincoln Park Auto Repair Service,Lincoln Park Auto Repair Service (home page),https://www.lincolnparkautorepairservice.com/,2026-09-30,data/raw/snapshots/SRC08.html,Provider's own site
+SRC09,Mechanista,Mechanista (home page),https://mechanista.org/,2026-09-30,data/raw/snapshots/SRC09.html,Provider's own site
+SRC10,SimpleTire,SimpleTire - Midtown Auto Repair installer listing,https://simpletire.com/tire-shops/shop/midtown-auto-repair/93629,2026-09-30,data/raw/snapshots/SRC10.html,Third-party tire retailer installer directory
+SRC11,North Center Auto Service,North Center Auto Service (home page),https://www.northcenterautoservice.com/,2026-09-30,data/raw/snapshots/SRC11.html,Provider's own site
+SRC12,Reliable Auto Repair Center,Reliable Auto Repair Center Inc (home page),https://www.reliableautorepairchicago.com/,2026-09-30,data/raw/snapshots/SRC12.html,Provider's own site
+SRC13,Rockwell Auto Clinic,Rockwell Auto Clinic (home page),http://www.rockwellautoclinic.com,2026-09-30,data/raw/snapshots/SRC13.html,Provider's own site
+SRC14,Speedline Auto & Tire,Speedline Auto & Tire (home page),https://speedlineautotire.com/,2026-09-30,data/raw/snapshots/SRC14.html,Provider's own site
+SRC15,Sun Auto Service,Sun Auto Service (home page),https://www.sunautoserviceinc.com/,2026-09-30,data/raw/snapshots/SRC15.html,Provider's own site; page does not display street address
+SRC16,Tuffy Tire & Auto Service (Diversey),Tuffy Chicago - Automotive Maintenance (home page),https://www.tuffychicago.com/,2026-09-30,data/raw/snapshots/SRC16.html,Location-specific franchise site for 1400 W Diversey
+SRC17,EuroRepairHQ,EuroRepairHQ - Autohaus in Chicago Illinois,https://eurorepairhq.com/shops/illinois/chicago/autohaus/,2026-09-30,data/raw/snapshots/SRC17.html,Third-party European repair shop directory
+SRC18,Consumers' Checkbook,Ashland Tire & Auto Clinic - Chicago Consumers' Checkbook,https://www.checkbook.org/il/chicago/auto-repair-shops/ashland-tire-and-auto-clinic/lrcz7,2026-09-30,data/raw/snapshots/SRC18.html,Nonprofit consumer ratings directory; used for corroboration
+SRC19,Lakeview East Chamber of Commerce,Fred's Wrigleyville Garage & Auto Repair - member listing,https://chicago.lakevieweast.com/list/member/fred-s-wrigleyville-garage-auto-repair-3640,2026-09-30,data/raw/snapshots/SRC19.html,Chamber member directory; used for corroboration
+SRC20,North Center Chamber of Commerce,Rockwell Auto Clinic - member listing,https://business.northcenterchamber.com/list/member/rockwell-auto-clinic-2525,2026-09-30,data/raw/snapshots/SRC20.html,Chamber member directory; used for corroboration
+SRC21,Ravenswood Community Council,Mechanista - Ravenswood business directory listing,https://business.ravenswoodchicago.org/list/member/mechanista-5610,2026-09-30,data/raw/snapshots/SRC21.html,Neighborhood business directory; used for corroboration

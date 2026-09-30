@@ -1,0 +1,17 @@
+business_id,business_name,street_address,city,state,zip_code,neighborhood,website,source_id,raw_row_ref
+1,Ashland Tire & Auto Clinic,3737 N Ashland Ave,Chicago,IL,60613,Lake View,https://www.ashlandtire.com/,SRC01,LIC:2215290-20250416
+2,Autohaus,4157 N Lincoln Ave,Chicago,IL,60618,North Center,,SRC01,LIC:2522221-20250516
+3,Bucaro Brothers Auto Care,2707 N Ashland Ave,Chicago,IL,60614,Lincoln Park,https://www.bucarobrothersautocare.com/,SRC01,LIC:2215128-20250416
+4,Cassidy Tire & Service,3235 N Western Ave,Chicago,IL,60618,North Center,https://www.cassidytire.com/,SRC01,LIC:2217572-20241216
+5,E & J Foreign Cars,4245 N Western Ave,Chicago,IL,60618,North Center,https://www.eandj.com/,SRC01,LIC:2214364-20250316
+6,Eliot's Complete Auto Repair,3658 N Lincoln Ave,Chicago,IL,60613,North Center,https://www.eliotscompleteautorepair.com/,SRC01,LIC:3069567-20260617
+7,Fred's Wrigleyville Garage & Auto Repair,3848 N Clark St,Chicago,IL,60613,Lake View,http://fredswrigleyvillegarage.com/,SRC01,LIC:2652867-20250416
+8,Lincoln Park Auto Repair Service,946 W Wrightwood Ave,Chicago,IL,60614,Lincoln Park,https://www.lincolnparkautorepairservice.com/,SRC01,LIC:2807704-20250916
+9,Mechanista,4526 N Ravenswood Ave,Chicago,IL,60640,Lincoln Square,https://mechanista.org/,SRC01,LIC:3030774-20250916
+10,Midtown Auto Repair,1403 W Shakespeare Ave,Chicago,IL,60614,Lincoln Park,https://www.midtownautorepair.com/,SRC01,LIC:2278252-20250816
+11,North Center Auto Service,3455 N Western Ave,Chicago,IL,60618,North Center,https://www.northcenterautoservice.com/,SRC01,LIC:2541914-20250716
+12,Reliable Auto Repair Center,3401 N Ashland Ave,Chicago,IL,60657,Lake View,https://www.reliableautorepairchicago.com/,SRC01,LIC:2213706-20250216
+13,Rockwell Auto Clinic,4050 N Rockwell St Unit C,Chicago,IL,60618,North Center,http://www.rockwellautoclinic.com/,SRC01,LIC:2912380-20250716
+14,Speedline Auto & Tire,5250 N Damen Ave,Chicago,IL,60625,Lincoln Square,https://speedlineautotire.com/,SRC01,LIC:2279495-20250816
+15,Sun Auto Service,3201 N Damen Ave,Chicago,IL,60618,North Center,https://www.sunautoserviceinc.com/,SRC01,LIC:2213900-20241216
+16,Tuffy Tire & Auto Service,1400 W Diversey Pkwy,Chicago,IL,60614,Lake View,https://www.tuffychicago.com/,SRC01,LIC:2512022-20250316

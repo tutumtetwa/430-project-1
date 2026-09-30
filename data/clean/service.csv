@@ -1,0 +1,8 @@
+service_id,service_name,category_id
+1,Oil Change,1
+2,Tire Service,1
+3,Wheel Alignment,1
+4,Brake Repair,2
+5,Vehicle Diagnostics,2
+6,Transmission Repair,2
+7,A/C & Heating Repair,2

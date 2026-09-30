@@ -1,0 +1,84 @@
+raw_row_id,observation_type,business_name_observed,address_observed,service_wording,source_id,source_url,collection_date,collector
+OBS001,identity,Ashland Tire & Auto,"3737 N Ashland Ave, Chicago, IL 60613",,SRC02,https://www.ashlandtire.com/,2026-09-30,tutumtetwa
+OBS002,service,Ashland Tire & Auto,,Oil Changes,SRC02,https://www.ashlandtire.com/,2026-09-30,tutumtetwa
+OBS003,service,Ashland Tire & Auto,,Tires and Alignments,SRC02,https://www.ashlandtire.com/,2026-09-30,tutumtetwa
+OBS004,service,Ashland Tire & Auto,,engine diagnostics,SRC02,https://www.ashlandtire.com/,2026-09-30,tutumtetwa
+OBS005,identity,Bucaro Brothers Auto Care,"2707 N. Ashland Ave, Chicago, IL 60614",,SRC03,https://www.bucarobrothersautocare.com/,2026-09-30,tutumtetwa
+OBS006,service,Bucaro Brothers Auto Care,,Fast Oil Change,SRC03,https://www.bucarobrothersautocare.com/,2026-09-30,tutumtetwa
+OBS007,service,Bucaro Brothers Auto Care,,Tires for Sale,SRC03,https://www.bucarobrothersautocare.com/,2026-09-30,tutumtetwa
+OBS008,service,Bucaro Brothers Auto Care,,Wheel Alignments,SRC03,https://www.bucarobrothersautocare.com/,2026-09-30,tutumtetwa
+OBS009,service,Bucaro Brothers Auto Care,,Brake Services,SRC03,https://www.bucarobrothersautocare.com/,2026-09-30,tutumtetwa
+OBS010,service,Bucaro Brothers Auto Care,,Check Engine Lights,SRC03,https://www.bucarobrothersautocare.com/,2026-09-30,tutumtetwa
+OBS011,service,Bucaro Brothers Auto Care,,Transmission Services,SRC03,https://www.bucarobrothersautocare.com/,2026-09-30,tutumtetwa
+OBS012,service,Bucaro Brothers Auto Care,,Car Air Conditioner Repair,SRC03,https://www.bucarobrothersautocare.com/,2026-09-30,tutumtetwa
+OBS013,identity,Cassidy Tire & Service,"3235 N. Western Ave., Chicago, IL 60618",,SRC04,https://www.cassidytire.com/stores/view/5163/,2026-09-30,tutumtetwa
+OBS014,service,Cassidy Tire & Service,,Oil Changes,SRC04,https://www.cassidytire.com/stores/view/5163/,2026-09-30,tutumtetwa
+OBS015,service,Cassidy Tire & Service,,Tire Services,SRC04,https://www.cassidytire.com/stores/view/5163/,2026-09-30,tutumtetwa
+OBS016,service,Cassidy Tire & Service,,Brakes,SRC04,https://www.cassidytire.com/stores/view/5163/,2026-09-30,tutumtetwa
+OBS017,service,Cassidy Tire & Service,,Diagnostics,SRC04,https://www.cassidytire.com/stores/view/5163/,2026-09-30,tutumtetwa
+OBS018,service,Cassidy Tire & Service,,Alignment Inspection,SRC04,https://www.cassidytire.com/stores/view/5163/,2026-09-30,tutumtetwa
+OBS019,identity,Eliot's Complete Auto Repair,"3658 N Lincoln, Chicago, IL 60613",,SRC05,https://www.eliotscompleteautorepair.com/,2026-09-30,tutumtetwa
+OBS020,service,Eliot's Complete Auto Repair,,Oil Changes,SRC05,https://www.eliotscompleteautorepair.com/,2026-09-30,tutumtetwa
+OBS021,service,Eliot's Complete Auto Repair,,Alignment,SRC05,https://www.eliotscompleteautorepair.com/,2026-09-30,tutumtetwa
+OBS022,service,Eliot's Complete Auto Repair,,Brakes,SRC05,https://www.eliotscompleteautorepair.com/,2026-09-30,tutumtetwa
+OBS023,service,Eliot's Complete Auto Repair,,Diagnostics,SRC05,https://www.eliotscompleteautorepair.com/,2026-09-30,tutumtetwa
+OBS024,service,Eliot's Complete Auto Repair,,Transmission Services,SRC05,https://www.eliotscompleteautorepair.com/,2026-09-30,tutumtetwa
+OBS025,service,Eliot's Complete Auto Repair,,A/C Service,SRC05,https://www.eliotscompleteautorepair.com/,2026-09-30,tutumtetwa
+OBS026,identity,E & J Foreign Cars,"4245 North Western Ave., Chicago, IL 60618",,SRC06,https://www.eandj.com/auto-services,2026-09-30,tutumtetwa
+OBS027,service,E & J Foreign Cars,,Brake Service and Repairs,SRC06,https://www.eandj.com/auto-services,2026-09-30,tutumtetwa
+OBS028,service,E & J Foreign Cars,,Diagnostic Resting,SRC06,https://www.eandj.com/auto-services,2026-09-30,tutumtetwa
+OBS029,service,E & J Foreign Cars,,Transmissions services and repairs,SRC06,https://www.eandj.com/auto-services,2026-09-30,tutumtetwa
+OBS030,identity,Fred's Wrigleyville Garage & Auto Repair,"3848 N Clark St, Chicago, IL 60613",,SRC07,http://fredswrigleyvillegarage.com,2026-09-30,tutumtetwa
+OBS031,service,Fred's Wrigleyville Garage & Auto Repair,,Oil Changes & Fluid Replacement,SRC07,http://fredswrigleyvillegarage.com,2026-09-30,tutumtetwa
+OBS032,service,Fred's Wrigleyville Garage & Auto Repair,,"Tire Mounting, Balancing and Flat Repair",SRC07,http://fredswrigleyvillegarage.com,2026-09-30,tutumtetwa
+OBS033,service,Fred's Wrigleyville Garage & Auto Repair,,"Steering, Suspension & Alignment Repair",SRC07,http://fredswrigleyvillegarage.com,2026-09-30,tutumtetwa
+OBS034,service,Fred's Wrigleyville Garage & Auto Repair,,Brake Inspections & Repair,SRC07,http://fredswrigleyvillegarage.com,2026-09-30,tutumtetwa
+OBS035,service,Fred's Wrigleyville Garage & Auto Repair,,"Computer, Electrical, & Electronic Systems Diagnosis",SRC07,http://fredswrigleyvillegarage.com,2026-09-30,tutumtetwa
+OBS036,service,Fred's Wrigleyville Garage & Auto Repair,,Transmissions Service & Repair,SRC07,http://fredswrigleyvillegarage.com,2026-09-30,tutumtetwa
+OBS037,service,Fred's Wrigleyville Garage & Auto Repair,,Air Conditioning Service & Repair,SRC07,http://fredswrigleyvillegarage.com,2026-09-30,tutumtetwa
+OBS038,identity,Lincoln Park Auto Repair Service,"946 W Wrightwood Ave, Chicago, IL 60614",,SRC08,https://www.lincolnparkautorepairservice.com/,2026-09-30,tutumtetwa
+OBS039,service,Lincoln Park Auto Repair Service,,Brake,SRC08,https://www.lincolnparkautorepairservice.com/,2026-09-30,tutumtetwa
+OBS040,service,Lincoln Park Auto Repair Service,,Computer Diagnostic,SRC08,https://www.lincolnparkautorepairservice.com/,2026-09-30,tutumtetwa
+OBS041,service,Lincoln Park Auto Repair Service,,Clutch & Transmission,SRC08,https://www.lincolnparkautorepairservice.com/,2026-09-30,tutumtetwa
+OBS042,service,Lincoln Park Auto Repair Service,,Heating & AC,SRC08,https://www.lincolnparkautorepairservice.com/,2026-09-30,tutumtetwa
+OBS043,identity,Mechanista,"4526 North Ravenswood Avenue, Chicago IL 60640",,SRC09,https://mechanista.org/,2026-09-30,tutumtetwa
+OBS044,service,Mechanista,,Oil change and inspection,SRC09,https://mechanista.org/,2026-09-30,tutumtetwa
+OBS045,service,Mechanista,,Tire Rotation,SRC09,https://mechanista.org/,2026-09-30,tutumtetwa
+OBS046,service,Mechanista,,Brake Pad & Rotor Replacement,SRC09,https://mechanista.org/,2026-09-30,tutumtetwa
+OBS047,service,Mechanista,,Diagnostic Services,SRC09,https://mechanista.org/,2026-09-30,tutumtetwa
+OBS048,identity,Midtown Auto Repair,"1403 W Shakespeare Ave, Chicago, IL",,SRC10,https://simpletire.com/tire-shops/shop/midtown-auto-repair/93629,2026-09-30,tutumtetwa
+OBS049,service,Midtown Auto Repair,,Tire installation,SRC10,https://simpletire.com/tire-shops/shop/midtown-auto-repair/93629,2026-09-30,tutumtetwa
+OBS050,identity,North Center Auto Service,"3455 N Western Ave, Chicago, IL 60618",,SRC11,https://www.northcenterautoservice.com/,2026-09-30,tutumtetwa
+OBS051,service,North Center Auto Service,,Oil Change,SRC11,https://www.northcenterautoservice.com/,2026-09-30,tutumtetwa
+OBS052,service,North Center Auto Service,,Tire Services,SRC11,https://www.northcenterautoservice.com/,2026-09-30,tutumtetwa
+OBS053,service,North Center Auto Service,,Brake Repair,SRC11,https://www.northcenterautoservice.com/,2026-09-30,tutumtetwa
+OBS054,service,North Center Auto Service,,Engine Diagnostics,SRC11,https://www.northcenterautoservice.com/,2026-09-30,tutumtetwa
+OBS055,identity,Reliable Auto Repair Center Inc,"3401 North Ashland, Chicago, IL 60657",,SRC12,https://www.reliableautorepairchicago.com/,2026-09-30,tutumtetwa
+OBS056,service,Reliable Auto Repair Center Inc,,engine diagnostics,SRC12,https://www.reliableautorepairchicago.com/,2026-09-30,tutumtetwa
+OBS057,identity,Rockwell Auto Clinic,"4050 N. Rockwell St. Unit C, Chicago, IL 60618",,SRC13,http://www.rockwellautoclinic.com,2026-09-30,tutumtetwa
+OBS058,service,Rockwell Auto Clinic,,Tires,SRC13,http://www.rockwellautoclinic.com,2026-09-30,tutumtetwa
+OBS059,service,Rockwell Auto Clinic,,Brakes,SRC13,http://www.rockwellautoclinic.com,2026-09-30,tutumtetwa
+OBS060,service,Rockwell Auto Clinic,,Check Engine Light,SRC13,http://www.rockwellautoclinic.com,2026-09-30,tutumtetwa
+OBS061,identity,Speedline Auto & Tire,"5250 N. Damen Ave., Chicago IL 60625",,SRC14,https://speedlineautotire.com/,2026-09-30,tutumtetwa
+OBS062,service,Speedline Auto & Tire,,Tires,SRC14,https://speedlineautotire.com/,2026-09-30,tutumtetwa
+OBS063,service,Speedline Auto & Tire,,Brake Services,SRC14,https://speedlineautotire.com/,2026-09-30,tutumtetwa
+OBS064,service,Speedline Auto & Tire,,A/C & Heating,SRC14,https://speedlineautotire.com/,2026-09-30,tutumtetwa
+OBS065,identity,Sun Auto Service,(address not displayed on page),,SRC15,https://www.sunautoserviceinc.com/,2026-09-30,tutumtetwa
+OBS066,service,Sun Auto Service,,Computer Diagnostics,SRC15,https://www.sunautoserviceinc.com/,2026-09-30,tutumtetwa
+OBS067,service,Sun Auto Service,,Transmissions,SRC15,https://www.sunautoserviceinc.com/,2026-09-30,tutumtetwa
+OBS068,service,Sun Auto Service,,Heating and A/C,SRC15,https://www.sunautoserviceinc.com/,2026-09-30,tutumtetwa
+OBS069,identity,Tuffy Tire & Auto Service,"1400 W Diversey Pkwy, Chicago, IL 60614",,SRC16,https://www.tuffychicago.com/,2026-09-30,tutumtetwa
+OBS070,service,Tuffy Tire & Auto Service,,Oil Change,SRC16,https://www.tuffychicago.com/,2026-09-30,tutumtetwa
+OBS071,service,Tuffy Tire & Auto Service,,Wheel Alignment,SRC16,https://www.tuffychicago.com/,2026-09-30,tutumtetwa
+OBS072,service,Tuffy Tire & Auto Service,,Brake Service,SRC16,https://www.tuffychicago.com/,2026-09-30,tutumtetwa
+OBS073,service,Tuffy Tire & Auto Service,,Vehicle Diagnostics,SRC16,https://www.tuffychicago.com/,2026-09-30,tutumtetwa
+OBS074,service,Tuffy Tire & Auto Service,,A/C Service and Repair,SRC16,https://www.tuffychicago.com/,2026-09-30,tutumtetwa
+OBS075,identity,Autohaus,"4157 N Lincoln Ave, Chicago, IL 60618 (listed website https://autohauschicago.com/)",,SRC17,https://eurorepairhq.com/shops/illinois/chicago/autohaus/,2026-09-30,tutumtetwa
+OBS076,service,Autohaus,,advanced diagnostic technology specifically designed for European engineering,SRC17,https://eurorepairhq.com/shops/illinois/chicago/autohaus/,2026-09-30,tutumtetwa
+OBS077,identity,Ashland Tire & Auto Clinic,"3737 N Ashland Ave, Chicago, IL 60613",,SRC18,https://www.checkbook.org/il/chicago/auto-repair-shops/ashland-tire-and-auto-clinic/lrcz7,2026-09-30,tutumtetwa
+OBS078,identity,Fred's Wrigleyville Garage & Auto Repair,"3848 N. Clark St. Chicago IL 60613 (website fredswrigleyvillegarage.com)",,SRC19,https://chicago.lakevieweast.com/list/member/fred-s-wrigleyville-garage-auto-repair-3640,2026-09-30,tutumtetwa
+OBS079,identity,Rockwell Auto Clinic,"4050 N Rockwell St Unit C, Chicago IL 60618 (website rockwellautoclinic.com)",,SRC20,https://business.northcenterchamber.com/list/member/rockwell-auto-clinic-2525,2026-09-30,tutumtetwa
+OBS080,identity,Mechanista,"4526 N Ravenswood Ave, Chicago, IL 60640 (website mechanista.org)",,SRC21,https://business.ravenswoodchicago.org/list/member/mechanista-5610,2026-09-30,tutumtetwa
+OBS081,identity,Belmont Auto Clinic Inc.,"1830 W Belmont Ave, Chicago, IL 60657 (category 'Auto Repairs' only; no specific services listed)",,BBB,https://www.bbb.org/us/il/chicago/profile/auto-repair/belmont-auto-clinic-inc-0654-1000028231,2026-09-30,tutumtetwa
+OBS082,identity,Hybrid Auto Repair,"5300 N Western Ave Chicago, IL 60625 (no website; category 'Auto repair' only)",,YAHOO,https://local.yahoo.com/info-233806557-hybrid-auto-repair-chicago/,2026-09-30,tutumtetwa
+OBS083,identity,Kraftsmen Auto Body,(site returned HTTP 522; not retrieved),,KRAFT,https://kraftsmenauto.com/,2026-09-30,tutumtetwa

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>P1 Slides — Chicago Car Repair DB</title>
+<style>
+@page { size: 13.333in 7.5in; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Helvetica Neue", Arial, sans-serif; color: #1b1b1b; }
+.slide { width: 13.333in; height: 7.5in; padding: 0.55in 0.7in; page-break-after: always; position: relative; overflow: hidden; }
+.slide:last-child { page-break-after: auto; }
+h1 { font-size: 34pt; margin: 0 0 6px; color: #3b1f6b; }
+h2 { font-size: 26pt; margin: 0 0 14px; color: #3b1f6b; border-bottom: 3px solid #3b1f6b; padding-bottom: 6px; }
+.lead { font-size: 16pt; color: #444; margin-bottom: 18px; }
+ul { font-size: 15pt; line-height: 1.45; margin: 6px 0 0 0; padding-left: 22px; }
+li { margin-bottom: 4px; }
+.cols { display: flex; gap: 0.45in; }
+.cols > div { flex: 1; }
+.stats { display: flex; gap: 14px; margin: 16px 0 20px; }
+.stat { flex: 1; background: #f1ecf8; border-radius: 10px; padding: 12px 10px; text-align: center; }
+.stat b { display: block; font-size: 32pt; color: #3b1f6b; }
+.stat span { font-size: 12pt; color: #444; }
+code, pre { font-family: Menlo, Consolas, monospace; }
+pre { background: #f5f5f5; border-left: 4px solid #3b1f6b; padding: 10px 12px; font-size: 11.5pt; line-height: 1.35; margin: 8px 0; white-space: pre; }
+table { border-collapse: collapse; font-size: 13pt; width: 100%; }
+td, th { border: 1px solid #bbb; padding: 5px 8px; text-align: left; }
+th { background: #3b1f6b; color: #fff; }
+.pass { color: #0a7a2f; font-weight: bold; }
+.foot { position: absolute; bottom: 0.3in; left: 0.7in; right: 0.7in; font-size: 10pt; color: #777; display: flex; justify-content: space-between; }
+.trace { display: flex; align-items: center; gap: 8px; font-size: 11.5pt; margin-top: 10px; flex-wrap: nowrap; }
+.trace div { background: #fff; border: 2px solid #3b1f6b; border-radius: 8px; padding: 8px 10px; }
+.arrow { font-size: 20pt; color: #3b1f6b; border: none !important; padding: 0 !important; }
+</style></head><body>
+
+<section class="slide">
+  <h1>Chicago North Side Car Repair Directory</h1>
+  <div class="lead">CS 284 / CS 430 Project 1 · Project 1 Team: Saron, Eyael, Tutu · MySQL 8.4.5 · snapshot 2026-09-30</div>
+  <ul>
+    <li><b>User question:</b> which nearby repair shops advertise the service I need, and how do we know?</li>
+    <li><b>Scope:</b> shops with a City of Chicago <i>Motor Vehicle Services License</i> in Lake View, Lincoln Park, Lincoln Square, North Center</li>
+  </ul>
+  <div class="stats">
+    <div class="stat"><b>16</b><span>businesses</span></div>
+    <div class="stat"><b>7</b><span>services</span></div>
+    <div class="stat"><b>2</b><span>categories</span></div>
+    <div class="stat"><b>60</b><span>offerings</span></div>
+    <div class="stat"><b>17</b><span>publishers cited</span></div>
+    <div class="stat"><b>4</b><span>corroborated</span></div>
+  </div>
+  <b style="font-size:14pt">Source trace: observation vs. classification</b>
+  <div class="trace">
+    <div>Bucaro Brothers<br><small>LIC:2215128-20250416</small></div><div class="arrow">→</div>
+    <div>Offering: <b>Transmission Repair</b><br><small>(our classification)</small></div><div class="arrow">→</div>
+    <div>SRC03 bucarobrothersautocare.com<br><small>snapshots/SRC03.html</small></div><div class="arrow">→</div>
+    <div>OBS011: "Transmission Services"<br><small>(what the page said)</small></div>
+  </div>
+  <div class="foot"><span>Cleaning example: "Diagnostic Resting" (typo on E&amp;J site) kept raw → mapped to Vehicle Diagnostics</span><span>1 / 4</span></div>
+</section>
+
+<section class="slide">
+  <h2>Model, keys, and normalization</h2>
+  <div class="cols">
+    <div>
+      <pre style="font-size:13pt">service_category (1) ──&lt; (N) service
+service  (1) ──&lt; (N) business_service (N) &gt;── (1) business
+source   (1) ──&lt; (N) business_service
+source   (1) ──&lt; (N) business
+
+business_service PK = (business_id, service_id)</pre>
+      <ul style="font-size:13.5pt">
+        <li><b>1:N</b> category → service (FK NOT NULL)</li>
+        <li><b>M:N</b> business ↔ service via <code>business_service</code></li>
+        <li>Composite PK blocks duplicate offerings (BR4)</li>
+        <li>Every business and offering cites a <code>source</code> + raw-row ref (BR3)</li>
+        <li>Delete business → CASCADE offerings; others RESTRICT</li>
+      </ul>
+    </div>
+    <div>
+      <b style="font-size:14pt">From one collection table to 3NF</b>
+      <pre>R(name, address, website, service, category,
+  wording, obs_row, source_url, publisher, date)
+key: {name, address, service}
+FD1 name,address → website ...   (partial)
+FD2 service → category           (partial)
+FD3 source_url → publisher, date (transitive)</pre>
+      <ul style="font-size:13.5pt">
+        <li>Split into business · service · service_category · source · business_service</li>
+        <li><b>Anomaly removed:</b> Fred's website was repeated on 7 rows → now stored once</li>
+        <li>FKs rejoin every original row (the Q2 join)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>Full ER diagram: report.pdf page 3</span><span>2 / 4</span></div>
+</section>
+
+<section class="slide">
+  <h2>Build and validation</h2>
+  <div class="cols">
+    <div>
+      <pre>mysql -u root -p &lt; sql/00_schema.sql   # reset + tables
+mysql -u root -p &lt; sql/01_load.sql     # real snapshot
+mysql -u root -p &lt; sql/02_views.sql    # directory view
+mysql -u root -p &lt; sql/03_queries.sql  # Q1-Q6
+tests/run_tests.sh                     # T1-T4 log</pre>
+      <ul style="font-size:13.5pt">
+        <li>No network needed; FK checks ON</li>
+        <li>Rebuilt twice → identical counts (16/7/2/60/21)</li>
+      </ul>
+    </div>
+    <div>
+      <table>
+        <tr><th>Test</th><th>Expected</th><th>Result</th></tr>
+        <tr><td>T1 counts + source links</td><td>all ≥ minimums, 0 broken links</td><td class="pass">PASS</td></tr>
+        <tr><td>T2 FK: business 999 / service 99</td><td>ERROR 1452 ×2</td><td class="pass">PASS</td></tr>
+        <tr><td>T3 duplicate pair (3,1)</td><td>ERROR 1062</td><td class="pass">PASS</td></tr>
+        <tr><td>T4 fixture: Q4 / Q5 / Q6 / Q3</td><td>901,902 · NULL rows · 901 · 3,2</td><td class="pass">PASS</td></tr>
+      </table>
+      <p style="font-size:12.5pt;color:#444">T4 runs in the separate database <code>p1_fixture</code>, which is dropped afterwards. The real snapshot has 0 fixture rows.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Evidence: tests/test_log.md</span><span>3 / 4</span></div>
+</section>
+
+<section class="slide">
+  <h2>Queries and findings</h2>
+  <div class="cols">
+    <div>
+      <b style="font-size:14pt">Q3: services with ≥ 7 providers</b>
+      <table style="margin:6px 0 14px">
+        <tr><th>Service</th><th>Providers</th></tr>
+        <tr><td>Vehicle Diagnostics</td><td>14</td></tr>
+        <tr><td>Brake Repair</td><td>11</td></tr>
+        <tr><td>Tire Service</td><td>9</td></tr>
+        <tr><td>Oil Change</td><td>8</td></tr>
+        <tr><td>A/C &amp; Heating Repair</td><td>7</td></tr>
+      </table>
+      <span style="font-size:12.5pt;color:#444">Below threshold: Transmission Repair 6, Wheel Alignment 5</span>
+    </div>
+    <div>
+      <ul style="font-size:14pt">
+        <li><b>Q2:</b> 6 shops record Transmission Repair, each with a source URL + raw row (no duplicate providers: PK)</li>
+        <li><b>Finding (Q4):</b> 11 of 16 shops have <i>no alignment recorded</i>, including both Lincoln Square shops</li>
+        <li><b>Q5:</b> LEFT JOIN with the filter in <code>ON</code> keeps NULL rows (Mechanista: 4 matched, 3 NULL)</li>
+        <li><b>Limitation:</b> absence = <i>not recorded</i>, not "not offered"; mostly home-page evidence; 16-shop sample ≠ market demand</li>
+        <li><b>Follow-up:</b> do the 11 shops actually do alignments? Check their service pages or call.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>Outputs + checks: outputs/query_outputs.md</span><span>4 / 4</span></div>
+</section>
+</body></html>
