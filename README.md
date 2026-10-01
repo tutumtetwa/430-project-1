@@ -21,9 +21,9 @@ as follows, and every member reviewed and tested the whole project.
 
 | Member | Research | Code | Write-up |
 |---|---|---|---|
-| Saron | City of Chicago license extract; shops 1–5 (Ashland, Autohaus, Bucaro, Cassidy, E & J) and their sources | `sql/00_schema.sql` (tables, keys, constraints), `sql/02_views.sql` | `data/cleaning_note.md` (rules, before/after, corroboration) |
-| Eyael | Shops 6–11 (Eliot's, Fred's, Lincoln Park Auto, Mechanista, Midtown, North Center) and their sources | `sql/03_queries.sql` (Q1–Q6), `scripts/run_queries.py` | `report.pdf`: ER diagram, business rules, normalization, findings |
-| Tutu | Shops 12–16 (Reliable, Rockwell, Speedline, Sun, Tuffy) and their sources; corroboration lookups | `scripts/build_load_sql.py` / `sql/01_load.sql`, `scripts/build.sh`, tests T1–T4 | `README.md`, `slides.pdf` |
+| Saron | City of Chicago license extract; shops 1–5 (Ashland, Autohaus, Bucaro, Cassidy, E & J) | `sql/00_schema.sql`, `sql/02_views.sql`; tests T2 and T3 (constraint rejections) | `data/cleaning_note.md` |
+| Eyael | Shops 6–10 (Eliot's, Fred's, Lincoln Park Auto, Mechanista, Midtown); corroboration lookups | `sql/03_queries.sql` (Q1–Q6), `scripts/run_queries.py`; test T4 (fixture) | `report.pdf` (ER diagram, normalization, findings) |
+| Tutu | Shops 11–16 (North Center, Reliable, Rockwell, Speedline, Sun, Tuffy) | `scripts/build_load_sql.py` / `sql/01_load.sql`, `scripts/build.sh`; test T1, `tests/run_tests.sh` | `README.md`, `data/source_register.csv` |
 
 The raw observation log (`data/raw/manual_observations.csv`) was entered under
 one account (`tutumtetwa`), so its `collector` column shows that name on every row.
@@ -98,7 +98,6 @@ points to `raw_row_id` in `data/raw/manual_observations.csv`. The source's saved
 ```
 README.md
 report.pdf                         two-page report + ER diagram page
-slides.pdf                         4 summary slides
 sql/00_schema.sql 01_load.sql 02_views.sql 03_queries.sql
 tests/run_tests.sh t1..t4 *.sql test_log.md
 outputs/query_outputs.md           Q1-Q6 outputs + checks
@@ -111,14 +110,14 @@ data/clean/*.csv                   cleaned loading files
 data/cleaning_note.md              rules, before/after, counts, exclusions, corroboration
 scripts/build_load_sql.py          regenerates sql/01_load.sql from data/clean + register
 scripts/build.sh, scripts/run_queries.py
-report/ slides/                    HTML sources for the PDFs
+report/                            HTML source for report.pdf
 ```
 
 ## AI-use statement
 
 Claude (Anthropic), used through Claude Code, helped find candidate shops (web
 search), draft the SQL schema, queries, and test scripts, generate the load
-script, and draft the README, report, and slides. Verification: every service
+script, and draft the README and report. Verification: every service
 offering was checked against the saved HTML snapshot of the cited page (the exact
 wording is stored in `observed_wording`). Business identities and addresses come
 from the City of Chicago license file. Four businesses were cross-checked against
