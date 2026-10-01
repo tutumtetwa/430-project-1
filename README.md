@@ -16,11 +16,17 @@ business or offering rows) · 4 businesses corroborated.
 
 ## Team
 
-| Member | Contributions |
-|---|---|
-| Saron | _fill in_ |
-| Eyael | _fill in_ |
-| Tutu | Data collection (AI-assisted), schema, scripts, tests — _edit as needed_ |
+Work is split into three areas. Each member owns one area: they verify it, fix
+it, and present it in the video. Everyone reviews the whole project.
+
+| Member | Area owned | Responsibilities |
+|---|---|---|
+| Saron | **Data and sources** | Re-check shops 1–8 (`data/clean/business.csv`) against their saved snapshots and the license CSV; own `data/cleaning_note.md` (rules, before/after examples, the 4 corroborations); source register; presents the source trace (video 0:00–3:00) |
+| Eyael | **Design and report** | Re-check shops 9–16 against snapshots; own the ER diagram, business rules, and normalization write-up; own `report.pdf` and `slides.pdf`; presents the model and normalization (video 3:00–7:00) |
+| Tutu | **SQL and testing** | Initial collection and build, done with AI assistance (see AI statement); own `sql/`, `tests/`, and `outputs/`; rerun the build, Q1–Q6, and T1–T4 before submission; presents the build and validation (video 7:00–11:00) |
+
+Q2 and the team-selected query (video 11:00–15:00) are shared: each member
+explains one result.
 
 ## Requirements
 
@@ -112,10 +118,10 @@ report/ slides/                    HTML sources for the PDFs
 
 | Time | Segment | Speaker |
 |---|---|---|
-| 0:00 | Question, scope, dataset size; trace Bucaro → Transmission Repair → SRC03 → OBS011; cleaning decision | _Name_ |
-| 3:00 | ER diagram, keys, constraints, normalization | _Name_ |
-| 7:00 | Build steps, T1 counts/source check, T2/T3 rejected inserts | _Name_ |
-| 11:00 | Q2 and Q5 (team-selected); finding + limitation | _Name_ |
+| 0:00 | Question, scope, dataset size; trace Bucaro → Transmission Repair → SRC03 → OBS011; cleaning decision | Saron |
+| 3:00 | ER diagram, keys, constraints, normalization | Eyael |
+| 7:00 | Build steps, T1 counts/source check, T2/T3 rejected inserts | Tutu |
+| 11:00 | Q2 and Q5 (team-selected); finding + limitation | Saron, Eyael, Tutu |
 | 15:00 | Individual segment: key/constraint + query modification | Saron |
 | _…_ | Individual segment | Eyael |
 | _…_ | Individual segment | Tutu |
@@ -131,5 +137,4 @@ offering was checked against the saved HTML snapshot of the cited page (the exac
 wording is stored in `observed_wording`). Business identities and addresses come
 from the City of Chicago license file. Four businesses were cross-checked against
 a second publisher. All queries and tests were run and their outputs are included.
-_Team members: confirm you reviewed and understand the schema and SQL, and edit
-this statement to describe your own use._
+_Each member (Saron, Eyael, Tutu): add one sentence describing your own AI use, or write "No AI tools used", and confirm that you reviewed and understand the schema and SQL._
