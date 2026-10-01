@@ -22,8 +22,8 @@ as follows, and every member reviewed and tested the whole project.
 | Member | Research | Code | Write-up |
 |---|---|---|---|
 | Saron | City of Chicago license extract; shops 1–5 (Ashland, Autohaus, Bucaro, Cassidy, E & J) | `sql/00_schema.sql`, `sql/02_views.sql`; tests T2 and T3 (constraint rejections) | `data/cleaning_note.md` |
-| Eyael | Shops 6–10 (Eliot's, Fred's, Lincoln Park Auto, Mechanista, Midtown); corroboration lookups | `sql/03_queries.sql` (Q1–Q6), `scripts/run_queries.py`; test T4 (fixture) | `report.pdf` (ER diagram, normalization, findings) |
-| Tutu | Shops 11–16 (North Center, Reliable, Rockwell, Speedline, Sun, Tuffy) | `scripts/build_load_sql.py` / `sql/01_load.sql`, `scripts/build.sh`; test T1, `tests/run_tests.sh` | `README.md`, `data/source_register.csv` |
+| Eyael | Shops 6–10 (Eliot's, Fred's, Lincoln Park Auto, Mechanista, Midtown); corroboration lookups | `sql/03_queries.sql` (Q1–Q6), `scripts/run_queries.py`; test T4 (fixture) | `report.pdf` sections 1–3 + ER diagram (scope, model, normalization) |
+| Tutu | Shops 11–16 (North Center, Reliable, Rockwell, Speedline, Sun, Tuffy) | `scripts/build_load_sql.py` / `sql/01_load.sql`, `scripts/build.sh`; test T1, `tests/run_tests.sh` | `report.pdf` section 4 (findings, limitation, follow-up); `README.md`; `data/source_register.csv` |
 
 The raw observation log (`data/raw/manual_observations.csv`) was entered under
 one account (`tutumtetwa`), so its `collector` column shows that name on every row.
