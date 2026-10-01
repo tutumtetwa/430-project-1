@@ -1,6 +1,6 @@
-# P1 — Chicago North Side Car Repair Directory (CS 284 / CS 430, Fall 2026)
+# P1: Chicago North Side Car Repair Directory (CS 284 / CS 430, Fall 2026)
 
-**Team: Project 1 Team** — Saron, Eyael, Tutu
+**Team: Project 1 Team:** Saron, Eyael, Tutu
 
 **Intended user:** a driver on Chicago's North Side who wants to know which nearby
 independent repair shops offer a specific service (brakes, alignment, transmission,
@@ -81,8 +81,8 @@ put credentials in `~/.my.cnf`. Credentials are never stored in this ZIP.)
 
 | Table | Purpose | Primary key | Foreign keys |
 |---|---|---|---|
-| `source` | Source register: publisher, title, URL, access date, saved-file path | `source_id` | — |
-| `service_category` | Groups services (Routine Maintenance; Repair & Diagnostics) | `category_id` | — |
+| `source` | Source register: publisher, title, URL, access date, saved-file path | `source_id` | none |
+| `service_category` | Groups services (Routine Maintenance; Repair & Diagnostics) | `category_id` | none |
 | `service` | 7 standardized service types | `service_id` | `category_id` → `service_category` (RESTRICT) |
 | `business` | One shop at one selected address; website optional (NULL) | `business_id` (+ UNIQUE `business_name, street_address`) | `source_id` → `source` (RESTRICT) |
 | `business_service` | Associative M:N table: one row per offering, with the observed wording, source, and raw-row ref | (`business_id`, `service_id`) | `business_id` → `business` (CASCADE); `service_id` → `service` (RESTRICT); `source_id` → `source` (RESTRICT) |
