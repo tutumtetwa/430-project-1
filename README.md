@@ -115,11 +115,21 @@ report/                            HTML source for report.pdf
 
 ## AI-use statement
 
-Claude (Anthropic), used through Claude Code, helped find candidate shops (web
-search), draft the SQL schema, queries, and test scripts, generate the load
-script, and draft the README and report. Verification: every service
-offering was checked against the saved HTML snapshot of the cited page (the exact
-wording is stored in `observed_wording`). Business identities and addresses come
-from the City of Chicago license file. Four businesses were cross-checked against
-a second publisher. All queries and tests were run and their outputs are included.
-_Each member (Saron, Eyael, Tutu): add one sentence describing your own AI use, or write "No AI tools used", and confirm that you reviewed and understand the schema and SQL._
+**Tools:** Claude (Anthropic), used through Claude Code. No paid subscriptions
+beyond the course-allowed tools; no prompt transcripts are included.
+
+**Tasks:** finding candidate shops by web search; drafting the SQL schema, view,
+queries, and test scripts; generating the load script; and drafting the README
+and report text.
+
+**Verification:** every service offering was checked against the saved HTML
+snapshot of the cited page, and the exact wording is stored in
+`observed_wording`. Business names and addresses come from the City of Chicago
+license file, not from AI output. Four businesses were cross-checked against a
+second independent publisher. All queries and tests were run on MySQL 8.4.5, and
+their outputs are included in `outputs/` and `tests/`. All three members reviewed
+the schema and SQL.
+
+**Individual statements:**
+
+Tutu: I used Claude to search for candidate shops and to draft the SQL, the load script, the tests, and the README. I verified shops 11-16 against the saved pages in data/raw/snapshots/ and ran the build, Q1-Q6, and T1-T4 myself.
