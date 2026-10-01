@@ -16,17 +16,17 @@ business or offering rows) · 4 businesses corroborated.
 
 ## Team
 
-Work is split into three areas. Each member owns one area: they verify it, fix
-it, and present it in the video. Everyone reviews the whole project.
+All three members wrote code and did research together. The work was divided
+as follows, and every member reviewed and tested the whole project.
 
-| Member | Area owned | Responsibilities |
-|---|---|---|
-| Saron | **Data and sources** | Re-check shops 1–8 (`data/clean/business.csv`) against their saved snapshots and the license CSV; own `data/cleaning_note.md` (rules, before/after examples, the 4 corroborations); source register; presents the source trace (video 0:00–3:00) |
-| Eyael | **Design and report** | Re-check shops 9–16 against snapshots; own the ER diagram, business rules, and normalization write-up; own `report.pdf` and `slides.pdf`; presents the model and normalization (video 3:00–7:00) |
-| Tutu | **SQL and testing** | Initial collection and build, done with AI assistance (see AI statement); own `sql/`, `tests/`, and `outputs/`; rerun the build, Q1–Q6, and T1–T4 before submission; presents the build and validation (video 7:00–11:00) |
+| Member | Research | Code | Write-up |
+|---|---|---|---|
+| Saron | City of Chicago license extract; shops 1–5 (Ashland, Autohaus, Bucaro, Cassidy, E & J) and their sources | `sql/00_schema.sql` (tables, keys, constraints), `sql/02_views.sql` | `data/cleaning_note.md` (rules, before/after, corroboration) |
+| Eyael | Shops 6–11 (Eliot's, Fred's, Lincoln Park Auto, Mechanista, Midtown, North Center) and their sources | `sql/03_queries.sql` (Q1–Q6), `scripts/run_queries.py` | `report.pdf`: ER diagram, business rules, normalization, findings |
+| Tutu | Shops 12–16 (Reliable, Rockwell, Speedline, Sun, Tuffy) and their sources; corroboration lookups | `scripts/build_load_sql.py` / `sql/01_load.sql`, `scripts/build.sh`, tests T1–T4 | `README.md`, `slides.pdf` |
 
-Q2 and the team-selected query (video 11:00–15:00) are shared: each member
-explains one result.
+The raw observation log (`data/raw/manual_observations.csv`) was entered under
+one account (`tutumtetwa`), so its `collector` column shows that name on every row.
 
 ## Requirements
 
@@ -98,7 +98,7 @@ points to `raw_row_id` in `data/raw/manual_observations.csv`. The source's saved
 ```
 README.md
 report.pdf                         two-page report + ER diagram page
-slides.pdf                         4 presentation slides
+slides.pdf                         4 summary slides
 sql/00_schema.sql 01_load.sql 02_views.sql 03_queries.sql
 tests/run_tests.sh t1..t4 *.sql test_log.md
 outputs/query_outputs.md           Q1-Q6 outputs + checks
@@ -113,20 +113,6 @@ scripts/build_load_sql.py          regenerates sql/01_load.sql from data/clean +
 scripts/build.sh, scripts/run_queries.py
 report/ slides/                    HTML sources for the PDFs
 ```
-
-## Video timestamp index
-
-| Time | Segment | Speaker |
-|---|---|---|
-| 0:00 | Question, scope, dataset size; trace Bucaro → Transmission Repair → SRC03 → OBS011; cleaning decision | Saron |
-| 3:00 | ER diagram, keys, constraints, normalization | Eyael |
-| 7:00 | Build steps, T1 counts/source check, T2/T3 rejected inserts | Tutu |
-| 11:00 | Q2 and Q5 (team-selected); finding + limitation | Saron, Eyael, Tutu |
-| 15:00 | Individual segment: key/constraint + query modification | Saron |
-| _…_ | Individual segment | Eyael |
-| _…_ | Individual segment | Tutu |
-
-Video: _uploaded to Brightspace as MP4 (or link here)_
 
 ## AI-use statement
 
