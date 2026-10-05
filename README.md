@@ -128,7 +128,3 @@ snapshot of the cited page, and the exact wording is stored in
 license file, not from AI output. Four businesses were cross-checked against a
 second independent publisher. All queries and tests were run on MySQL 8.4.5, and
 their outputs are included in `outputs/` and `tests/`.
-
-**Individual statement:**
-
-Tutu: I used Claude to search for candidate shops and to draft the SQL, the load script, the tests, and the README. I ran the build, Q1-Q6, and T1-T4 myself on MySQL 8.4.5.
