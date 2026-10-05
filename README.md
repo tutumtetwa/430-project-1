@@ -127,9 +127,8 @@ snapshot of the cited page, and the exact wording is stored in
 `observed_wording`. Business names and addresses come from the City of Chicago
 license file, not from AI output. Four businesses were cross-checked against a
 second independent publisher. All queries and tests were run on MySQL 8.4.5, and
-their outputs are included in `outputs/` and `tests/`. All three members reviewed
-the schema and SQL.
+their outputs are included in `outputs/` and `tests/`.
 
-**Individual statements:**
+**Individual statement:**
 
-Tutu: I used Claude to search for candidate shops and to draft the SQL, the load script, the tests, and the README. I verified shops 11-16 against the saved pages in data/raw/snapshots/ and ran the build, Q1-Q6, and T1-T4 myself.
+Tutu: I used Claude to search for candidate shops and to draft the SQL, the load script, the tests, and the README. I ran the build, Q1-Q6, and T1-T4 myself on MySQL 8.4.5.
